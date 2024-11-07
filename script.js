@@ -1,34 +1,35 @@
 //complete this code
 class Animal {
-	constructor(species: string){
+	constructor(species){
 		this.species = species;
 	}
-	species(): string{
+	species(){
 		return this.species;
 	}
 
-	makeSound(): void{
-		console.log("The "+this.name+" makes a sound");
+	makeSound(){
+		console.log("The "+this.species+" makes a sound");
 	}
 }
 
 class Dog extends Animal {
-	constructor(species: string){
+	constructor(species){
 		super(species);
 	}
-	purr(): void {
-		console.log("purr");
+	bark() {
+		console.log("woof");
 	}
 }
 
 class Cat extends Animal {
-		constructor(species: string){
+		constructor(species){
 		super(species);
 	}
-	bark(): void {
-		console.log("woof");
+	purr() {
+		console.log("purr");
 	}
 }
+
 
 // Do not change the code below this line
 window.Animal = Animal;
